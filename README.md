@@ -1,4 +1,4 @@
-# LRT
+# Light Field Image Restoration via Latent Diffusion and Multi-View Attention
 
 The source codes of the paper **Light Field Image Restoration via Latent Diffusion and Multi-View Attention** published on *IEEE Signal Processing Letters*.
 
