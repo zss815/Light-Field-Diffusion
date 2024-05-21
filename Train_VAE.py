@@ -127,9 +127,9 @@ if __name__=='__main__':
     parser.add_argument('--lr_init', default=1e-3, type=float)
     parser.add_argument('--max_epoch',default=1000,type=int)
     parser.add_argument('--save_num', default=10, type=int, help='number of saved models')
-    parser.add_argument('--save_root',default='/mnt/disk/Lowlight/VAE',type=str)
+    parser.add_argument('--save_root',default='/mnt/disk/save_models/Diffusion/Lowlight/VAE',type=str)
     parser.add_argument('--pre_train',default=False,type=bool)
-    parser.add_argument('--model_path',default='/mnt/disk/Lowlight/VAE/model1.pth',type=str)
+    parser.add_argument('--model_path',default='/mnt/disk/save_models/Diffusion/Lowlight/VAE/model1.pth',type=str)
     args = parser.parse_known_args()[0]
     
     os.environ["CUDA_VISIBLE_DEVICES"] = "0"
