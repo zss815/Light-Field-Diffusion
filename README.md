@@ -24,5 +24,5 @@ If you find this work is helpful to you, please cite the following paper:
   volume={31},
   number={},
   pages={1094-1098}
-}
+  }
 ```
