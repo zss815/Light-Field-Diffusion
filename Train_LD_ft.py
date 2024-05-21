@@ -41,7 +41,7 @@ def train(args):
     model_LD.cuda() 
     model_LD.load_state_dict(torch.load(args.model_path))
 
-    model_refine = LFRefineNet(in_channels=6,out_channels=3,base_channels=16,an=3,patch_size=16)
+    model_refine = LFRefineNet(in_channels=9,out_channels=3,base_channels=16,an=3,patch_size=16)
     print('Refinement model parameters: {}'.format(sum(param.numel() for param in model_refine.parameters())))
     model_refine.cuda()
 
@@ -98,7 +98,7 @@ def train(args):
             z0 = (zt - e_pred * (1 - a).sqrt()) / a.sqrt()  #[B*A*A,4,h,w]
             x0 = VAE_model.decoder(z0)  #[B*A*A,3,H,W]
 
-            inp_re=torch.cat([x0,inp[:,:3,:,:]],dim=1)  #[B*A*A,6,H,W]
+            inp_re=torch.cat([x0,inp],dim=1)  #[B*A*A,9,H,W]
             x1 = model_refine(inp_re)   #[B*A*A,3,H,W]
 
             #Calculate losses
