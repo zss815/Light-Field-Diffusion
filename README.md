@@ -9,7 +9,8 @@ The source codes of the paper **Light Field Image Restoration via Latent Diffusi
 
 ## Dataset
 
-The datasets [Stanford Light Field Archives](http://lightfields.stanford.edu/), [EPFL](https://www.epfl.ch/labs/mmspg/downloads/epfl-light-field-image-dataset/) and [Kalantari](https://cseweb.ucsd.edu//~viscomp/projects/LF/papers/SIGASIA16/) are used to synthesize low-light LF images.
+* Low-light LF image enhancement: The datasets [Stanford Light Field Archives](http://lightfields.stanford.edu/), [EPFL](https://www.epfl.ch/labs/mmspg/downloads/epfl-light-field-image-dataset/) and [Kalantari](https://cseweb.ucsd.edu//~viscomp/projects/LF/papers/SIGASIA16/) are used to synthesize low-light LF images.
+* LF image deraining: The data is from [4D-MGP-SRRNet](https://github.com/YT3DVision/4D-MGP-SRRNet?tab=readme-ov-file)
 
 ## Citation
 
