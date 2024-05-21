@@ -101,26 +101,5 @@ class LFRefineNet(nn.Module):
         out=torch.clamp(out,-1,1) 
         
         return out
-
-
-# if __name__ == "__main__":
-#     import time  
-#     import os
-#     from thop import profile
-
-#     os.environ["CUDA_VISIBLE_DEVICES"] = "0"    
-#     with torch.no_grad():
-#         model = LFRefineNet(in_channels=6,out_channels=3,base_channels=16,an=3,patch_size=16)
-#         inp=torch.randn(1,9,6,512,512)
-#         flops, params = profile(model, inputs=(inp,))
-#         print('Parameters: %.2fM' % (params / 1e6))
-#         print('FLOPs: %.2fG' % (flops / 1e9))
-
-#         model.cuda()
-#         t0=time.time()
-#         out=model(inp.cuda())
-#         t1=time.time()
-#         print(t1-t0)
-#         print(out.size())
         
     
