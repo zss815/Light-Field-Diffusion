@@ -1,6 +1,6 @@
 # Light Field Image Restoration via Latent Diffusion and Multi-View Attention
 
-The source codes of the paper **Light Field Image Restoration via Latent Diffusion and Multi-View Attention** published on *IEEE Signal Processing Letters*.
+The source codes of the paper [**Light Field Image Restoration via Latent Diffusion and Multi-View Attention**](https://ieeexplore.ieee.org/abstract/document/10487025) published on *IEEE Signal Processing Letters*.
 
 ## Requirements
 
